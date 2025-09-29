@@ -1,0 +1,105 @@
+.sentence-container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.3s ease;
+}
+
+.sentence-container:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.sentence-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.sentence-tts-button {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.sentence-tts-button:hover {
+  background: linear-gradient(135deg, #2980b9, #1f5f8b);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.sentence-tts-button.speaking {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  animation: pulse-button 1.5s infinite;
+}
+
+@keyframes pulse-button {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.arabic-sentence {
+  font-family: 'Amiri', 'Scheherazade New', 'Noto Sans Arabic', serif;
+  font-size: 2rem;
+  line-height: 1.8;
+  text-align: right;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-right: 4px solid #3498db;
+}
+
+.transliteration {
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  background: #e8f4fd;
+  border-radius: 6px;
+  border-left: 3px solid #3498db;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #2c3e50;
+  letter-spacing: 0.02em;
+}
+
+.translation {
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  background: #e8f8f5;
+  border-radius: 6px;
+  border-left: 3px solid #27ae60;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+}
+
+.transliteration strong,
+.translation strong {
+  color: #34495e;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sentence-tts-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .arabic-sentence {
+    font-size: 1.8rem;
+    padding: 0.8rem;
+  }
+}

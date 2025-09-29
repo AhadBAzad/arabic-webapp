@@ -1,0 +1,422 @@
+.vocabulary-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.vocabulary-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.vocabulary-header h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.vocabulary-header h1 .material-icons {
+  font-size: 3rem;
+  color: #3498db;
+}
+
+.vocabulary-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.vocab-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #3498db;
+}
+
+.stat-card.mastered {
+  border-left-color: #2ecc71;
+}
+
+.stat-card.learning {
+  border-left-color: #f39c12;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.vocab-controls {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.toggle-section {
+  flex-shrink: 0;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.toggle-label:hover {
+  border-color: #3498db;
+  background: #f8f9fa;
+}
+
+.toggle-checkbox {
+  margin: 0;
+}
+
+.toggle-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.toggle-text .material-icons {
+  font-size: 18px;
+  color: #3498db;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.filter-section {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.filter-btn:hover {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.filter-btn.active {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.vocabulary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vocab-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #f39c12;
+  transition: all 0.3s ease;
+}
+
+.vocab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.vocab-card.mastered {
+  border-left-color: #2ecc71;
+  background: #f8fff9;
+}
+
+.vocab-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.arabic-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arabic-word {
+  font-family: 'Amiri', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  direction: rtl;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+.audio-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audio-btn .material-icons {
+  font-size: 20px;
+}
+
+.audio-btn:hover {
+  background: #2980b9;
+  transform: scale(1.1);
+}
+
+.translation-section {
+  text-align: center;
+}
+
+.transliteration {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.english {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.meta-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: right;
+}
+
+.category,
+.difficulty,
+.root {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.category {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.difficulty {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.root {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.vocab-example {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.example-arabic {
+  font-family: 'Amiri', serif;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  direction: rtl;
+  text-align: right;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.example-translation {
+  color: #666;
+  font-style: italic;
+}
+
+.vocab-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-review,
+.btn-master {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-review {
+  background: #3498db;
+  color: white;
+}
+
+.btn-review:hover {
+  background: #2980b9;
+}
+
+.btn-master {
+  background: #f39c12;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-master .material-icons {
+  font-size: 18px;
+}
+
+.btn-master:hover {
+  background: #e67e22;
+}
+
+.btn-master.mastered {
+  background: #2ecc71;
+}
+
+.btn-master.mastered:hover {
+  background: #27ae60;
+}
+
+.no-words {
+  text-align: center;
+  padding: 4rem;
+  color: #666;
+}
+
+.no-words h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .vocabulary-page {
+    padding: 1rem;
+  }
+
+  .vocab-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-section {
+    min-width: auto;
+  }
+
+  .filter-section {
+    justify-content: center;
+  }
+
+  .vocab-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .meta-section {
+    text-align: center;
+  }
+
+  .vocab-actions {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .action-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}
