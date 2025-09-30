@@ -100,7 +100,7 @@ const TopicsPage = () => {
         {topics.map(topic => (
           <Link 
             key={topic.id} 
-            to={topic.id === 'daily-phrases' ? '/topics/daily-phrases' : `/library?topic=${topic.name}`}
+            to={`/library?topic=${topic.name}`} 
             className="topic-card"
             style={{ '--topic-color': topic.color } as React.CSSProperties}
           >

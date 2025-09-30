@@ -8,7 +8,6 @@ import VocabularyPage from './pages/VocabularyPage';
 import AudioStoriesPage from './pages/AudioStoriesPage';
 import ProgressPage from './pages/ProgressPage';
 import AboutPage from './pages/AboutPage';
-import DailyPhrasesPage from './pages/DailyPhrasesPage';
 import './App.css';
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/library" element={<LibraryPage />} />
             <Route path="/topics" element={<TopicsPage />} />
-            <Route path="/topics/daily-phrases" element={<DailyPhrasesPage />} />
             <Route path="/levels" element={<LevelsPage />} />
             <Route path="/vocabulary" element={<VocabularyPage />} />
             <Route path="/audio-stories" element={<AudioStoriesPage />} />

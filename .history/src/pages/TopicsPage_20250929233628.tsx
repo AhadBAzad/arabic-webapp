@@ -4,15 +4,6 @@ import './TopicsPage.css';
 const TopicsPage = () => {
   const topics = [
     {
-      id: 'daily-phrases',
-      name: 'Daily Phrases',
-      nameArabic: 'العبارات اليومية',
-      icon: 'chat_bubble',
-      description: 'Essential Arabic phrases for everyday conversations and interactions',
-      storyCount: 150,
-      color: '#8b5cf6'
-    },
-    {
       id: 'literature',
       name: 'Literature',
       nameArabic: 'الأدب',
@@ -100,7 +91,7 @@ const TopicsPage = () => {
         {topics.map(topic => (
           <Link 
             key={topic.id} 
-            to={topic.id === 'daily-phrases' ? '/topics/daily-phrases' : `/library?topic=${topic.name}`}
+            to={`/library?topic=${topic.name}`} 
             className="topic-card"
             style={{ '--topic-color': topic.color } as React.CSSProperties}
           >

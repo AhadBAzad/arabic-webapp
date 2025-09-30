@@ -9,6 +9,7 @@ import AudioStoriesPage from './pages/AudioStoriesPage';
 import ProgressPage from './pages/ProgressPage';
 import AboutPage from './pages/AboutPage';
 import DailyPhrasesPage from './pages/DailyPhrasesPage';
+import DailyPhrasesDatabase from './pages/DailyPhrasesDatabase';
 import './App.css';
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/library" element={<LibraryPage />} />
             <Route path="/topics" element={<TopicsPage />} />
-            <Route path="/topics/daily-phrases" element={<DailyPhrasesPage />} />
+                    <Route path="/daily-phrases" element={<DailyPhrasesPage />} />
+        <Route path="/daily-phrases-database" element={<DailyPhrasesDatabase />} />
             <Route path="/levels" element={<LevelsPage />} />
             <Route path="/vocabulary" element={<VocabularyPage />} />
             <Route path="/audio-stories" element={<AudioStoriesPage />} />

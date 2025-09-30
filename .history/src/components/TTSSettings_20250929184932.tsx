@@ -48,25 +48,8 @@ const TTSSettings = ({ isOpen, onClose }: TTSSettingsProps) => {
           )}
           
           {availableVoices.length > 0 && (
-            <div className="setting-group">
-              <label htmlFor="voice-select">Arabic Voice:</label>
-              <select
-                id="voice-select"
-                onChange={(e) => ttsService.setVoice(parseInt(e.target.value))}
-                className="voice-select"
-              >
-                {availableVoices.map((voice, index) => (
-                  <option key={index} value={index}>
-                    {voice.name} ({voice.lang})
-                  </option>
-                ))}
-              </select>
-            </div>
-          )}
-          
-          {availableVoices.length > 0 && (
             <div className="voices-info">
-              <strong>Available Arabic voices ({availableVoices.length}):</strong>
+              <strong>Available Arabic voices:</strong>
               <ul>
                 {availableVoices.map((voice, index) => (
                   <li key={index}>
