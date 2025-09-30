@@ -175,3 +175,4 @@ This is an open-source project built for the Arabic learning community. Contribu
 **🌙 Built with passion for Arabic language learners worldwide**
 
 *"And We made from them leaders guiding by Our command when they were patient and were certain of Our signs." - Quran 32:24*
+# arab-read
